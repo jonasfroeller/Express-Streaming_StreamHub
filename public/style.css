@@ -1,0 +1,361 @@
+:root {
+    --black-one: rgb(24, 24, 24);
+    --black-two: rgb(18, 18, 18);
+    --grey-one: rgb(55, 55, 55);
+    --grey-two: rgb(44, 44, 44);
+    --green: rgb(25, 100, 25);
+    --orange: #ff9900;
+    --blue: rgb(55, 55, 170);
+    --white: azure;
+}
+
+* {
+    word-break: break-all;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--black-one);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: hidden;
+}
+
+meter {
+    display: block;
+}
+
+header {
+    background-color: var(--grey-one);
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#headline {
+    word-break: normal;
+    background-color: var(--grey-one);
+    color: var(--white);
+    height: 98%;
+    cursor: pointer;
+}
+
+#orangeBackground {
+    word-break: normal;
+    background-color: var(--green);
+    /*--orange*/
+    color: var(--black-one);
+    border-radius: 1vh;
+    padding-left: 2%;
+    padding-right: 2%;
+    animation: changeColor infinite 3s;
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: var(--green);
+    }
+
+    50% {
+        background-color: var(--blue);
+    }
+
+    100% {
+        background-color: var(--green);
+    }
+}
+
+main {
+    height: 80vh;
+}
+
+nav {
+    background-color: var(--grey-two);
+    height: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    padding: 1%;
+    width: 98%;
+}
+
+.item {
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+#cathegories {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.cathegory {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black-two);
+    border: 2px solid var(--grey-one);
+    color: var(--white);
+    height: 36px;
+    min-width: 80px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.cathegory:hover {
+    border: 2px solid var(--white);
+}
+
+#showMore {
+    display: flex;
+    flex-direction: row;
+}
+
+.item img {
+    display: flex;
+    align-items: center;
+    min-width: auto;
+    height: 40px;
+    ;
+    border: 2px solid var(--grey-two);
+    border-radius: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.item img:hover {
+    border: 2px solid var(--white);
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: auto;
+}
+
+form .material-icons {
+    display: flex;
+}
+
+form input {
+    margin: 0%;
+    background-color: var(--black-two);
+    border: 2px solid var(--grey-one);
+    border-radius: 0%;
+    color: var(--white);
+}
+
+form input:focus {
+    outline: none !important;
+    border: 2px solid var(--white);
+}
+
+form button {
+    margin: 0%;
+    background-color: var(--black-two);
+    border: 2px solid var(--grey-one);
+    color: var(--white);
+    cursor: pointer;
+}
+
+form button:focus {
+    border: 2px solid var(--white);
+}
+
+#searchResults {
+    display: flex;
+    align-items: center;
+    color: var(--white);
+}
+
+#videos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video-wrapper {
+    margin: 0;
+    width: 22%;
+    height: fit-content;
+    background-color: var(--white);
+    margin: 0.5%;
+    padding: 0.25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-info-head p {
+    margin: 0;
+    background-color: var(--black-one);
+    color: var(--white);
+    padding: 1%;
+}
+
+.video-info-text {
+    margin: 0;
+    padding: 0.25%;
+    width: fit-content;
+}
+
+.video {
+    width: 100%;
+    cursor: pointer;
+    border-bottom: 2.5px solid var(--white);
+}
+
+footer {
+    background-color: var(--grey-one);
+    min-height: 10vh;
+}
+
+#orangeBackground {
+    background-color: var(--green);
+    /*--orange*/
+    color: var(--black-one);
+    border-radius: 1vh;
+    margin-left: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    animation: changeColor infinite 3s;
+}
+
+@keyframes changeBorder {
+    0% {
+        border: 1px solid var(--green);
+    }
+
+    50% {
+        border: 1px solid var(--blue);
+    }
+
+    100% {
+        border: 1px solid var(--green);
+    }
+}
+
+#loginFields {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 0;
+}
+
+#loginFields #form {
+    background-color: var(--grey-one);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 50%;
+    height: 25vh;
+    /*dont working tun*/
+    height: auto;
+    padding: 1%;
+    border: 1px solid var(--white);
+}
+
+#loginFields #form .input {
+    display: flex;
+    justify-content: space-between;
+}
+
+#loginFields #form label {
+    background-color: var(--white);
+    color: var(--black-one);
+    padding-left: 0.5%;
+    width: 25%;
+    border: 2px solid var(--black-one);
+    font-weight: bold;
+}
+
+#loginFields #form .input #nameInput, #loginFields #form .input #passwortInput {
+    outline: none !important;
+    border: 2px solid var(--blue);
+    width: 75%;
+}
+
+#loginFields #form .input #nameInput:focus, #loginFields #form .input #passwortInput:focus {
+    outline: none !important;
+    border: 2px solid var(--green);
+    width: 75%;
+}
+
+#loginFields #form button {
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--black-one);
+    border: 1px solid var(--black-one);
+    transition: 0.3s ease-in-out;
+    min-height: 2.5vh;
+    width: 100%;
+    position: relative;
+}
+
+.animateButton {
+    position: absolute;
+    width: 100%;
+    height: 0.25vh;
+    background-color: var(--grey-one);
+    left: 0;
+    top: 0;
+}
+
+#loginFields #form button:hover {
+    background-color: var(--green);
+    border: 1px solid var(--white);
+    animation: animateButton 3s ease-in-out 0s infinite alternate both;
+    color: var(--white);
+}
+
+@keyframes animateButton {
+    0% {
+        background-color: var(--green);
+    }
+
+    50% {
+        background-color: var(--blue);
+    }
+
+    100% {
+        background-color: var(--green);
+    }
+}
+
+
+#loginFields #form button:hover+.animateButton {
+    animation: animateBar 3s ease-in-out 0s infinite alternate;
+}
+
+@keyframes animateBar {
+    0% {
+        width: 0%;
+        border: 1px solid var(--green);
+        background-color: var(--green);
+    }
+
+    50% {
+        border: 1px solid var(--blue);
+        background-color: var(--blue);
+    }
+
+    100% {
+        width: 100%;
+        border: 1px solid var(--green);
+        background-color: var(--green);
+    }
+}
