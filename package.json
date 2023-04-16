@@ -1,7 +1,7 @@
 {
-  "name": "express-streaming",
+  "name": "Express-Streaming_StreamHub",
   "version": "1.0.0",
-  "description": "",
+  "description": "Stream Hub is a streaming platform for high quality videos that can only be viewed as registered user.",
   "main": "data.js",
   "scripts": {
     "start": "nodemon server.js"
