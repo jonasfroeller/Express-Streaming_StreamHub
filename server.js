@@ -1,7 +1,7 @@
 // Module und Variablen
 const Data = require('./data.js'); // require == new Data()...
 const express = require("express");
-const chalk = require('chalk');
+const chalk = require('chalk'); // Chalk 5 has changed to ESM (latest before is 4.1.2)
 const fs = require("fs");
 // const { createHash } = require('crypto');
 
