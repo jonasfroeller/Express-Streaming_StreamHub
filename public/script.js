@@ -28,7 +28,15 @@ function multiRespond(password) {
             playVideo();
         }
     };
-    xhttp.open("GET", `http://localhost:8000/getVideos/` + password, true);
+
+    let host = "";
+    if (window.location.hostname === "localhost") {
+        host = "http://localhost:8000";
+    } else {
+        host = "https://express-streaming-streamhub.glitch.me";
+    }
+
+    xhttp.open("GET", `${host}/getVideos/${password}`, true);
 
     xhttp.send();
 }
